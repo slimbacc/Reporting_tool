@@ -1,0 +1,47 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "editor.formatOnSave": true,
+    "black-formatter.args": [
+        "--line-length=100",
+    ],
+    "mypy-type-checker.severity": {
+        "error": "Error",
+        "note": "Information"
+    },
+    "mypy-type-checker.args": [
+        "--follow-imports=silent",
+        "--show-column-numbers",
+        "--ignore-missing-imports",
+        "--disallow-untyped-defs",
+        "--check-untyped-defs",
+        "--disable-error-code=incompatible-types-in-assignment",
+    ],
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "pylint.args": [
+        "--errors-only",
+        "--disable=C0111",
+        "--disable=C0114",
+        "--disable=C0115",
+        "--disable=C0116",
+        "--disable=missing-class-docstring",
+        "--disable=missing-function-docstring",
+        "--extension-pkg-whitelist=pygame",
+        "--unsafe-load-any-extension=y",
+        "--disable=missing-module-docstring",
+        "--disable=missing-class-docstring",
+        "--disable=missing-function-docstring"
+    ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "git.autofetch": true,
+    "files.autoSave": "afterDelay",
+    "sonarlint.connectMode.connection.sonarqube": [
+        {}
+    ]
+}
